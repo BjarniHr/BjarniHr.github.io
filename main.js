@@ -135,14 +135,14 @@ class EnemySquare {
     constructor(x, y, velocity, radius, friction) {
         this.x = x;
         this.y = y;
-        this.radius = radius;
+        this.radius = radius * 2;
         this.velocity = velocity;
         this.friction = friction;
     }
 
     draw() {
         ctx.fillStyle = "grey";
-        ctx.fillRect(this.x - (this.radius * 1.5), this.y - (this.radius * 1.5), this.radius, this.radius);
+        ctx.fillRect(this.x - (this.radius / 2), this.y - (this.radius / 2), this.radius, this.radius);
     }
 
     update() {
@@ -458,7 +458,7 @@ function loop() {
                     }, 0)
                 } else {
                     setTimeout(() => {
-                        window.navigator.vibrate(200);
+                        navigator.vibrate(200);
                         score += 200;
                         enemies.splice(index, 1);
                         projectiles.splice(projIndex, 1)
