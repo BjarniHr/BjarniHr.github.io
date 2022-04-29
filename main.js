@@ -458,7 +458,7 @@ function loop() {
                     }, 0)
                 } else {
                     setTimeout(() => {
-                        navigator.vibrate(200);
+                        window.navigator.vibrate(200);
                         score += 200;
                         enemies.splice(index, 1);
                         projectiles.splice(projIndex, 1)
