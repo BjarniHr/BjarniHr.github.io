@@ -135,14 +135,14 @@ class EnemySquare {
     constructor(x, y, velocity, radius, friction) {
         this.x = x;
         this.y = y;
-        this.radius = radius * 2;
+        this.radius = radius * 1.5;
         this.velocity = velocity;
         this.friction = friction;
     }
 
     draw() {
         ctx.fillStyle = "grey";
-        ctx.fillRect(this.x - (this.radius / 2), this.y - (this.radius / 2), this.radius, this.radius);
+        ctx.fillRect(this.x - (this.radius), this.y - (this.radius), this.radius, this.radius);
     }
 
     update() {
