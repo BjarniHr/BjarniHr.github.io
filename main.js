@@ -261,6 +261,7 @@ window.addEventListener("touchend", (e) => {
         player.velocityX = velocity.x;
         player.velocityY = velocity.y;
     }
+    window.navigator.vibrate(200);
 });
 
 // ----------------------------------
