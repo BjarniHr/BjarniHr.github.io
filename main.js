@@ -142,7 +142,7 @@ class EnemySquare {
 
     draw() {
         ctx.fillStyle = "grey";
-        ctx.fillRect(this.x - (this.radius * 1.3), this.y - (this.radius * 1.3), this.radius, this.radius);
+        ctx.fillRect(this.x - (this.radius * 1.5), this.y - (this.radius * 1.5), this.radius, this.radius);
     }
 
     update() {
